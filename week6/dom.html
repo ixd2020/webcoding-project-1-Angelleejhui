@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&display=swap" rel="stylesheet">
+
+  <title>Hello!</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+
+</head>
+  <body>
+    <h2>MY FIRST PAGE</h2>
+    <p id="demo"></p>
+
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World?????";
+
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+  </body>
+</html>
