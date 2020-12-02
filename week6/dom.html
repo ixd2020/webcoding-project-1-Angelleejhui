@@ -20,11 +20,40 @@
 
     <h1 onclick="changeText(this)">Click on this text!</h1>
 
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color:pink;width:300px;height:30px;padding:50px;">
+Here</div>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<button id="myBtn">DONT CLICK</button>
+
+
 <script>
 document.getElementById("demo").innerHTML = "Hello World?????";
 
 function changeText(id) {
   id.innerHTML = "Ooops!";
+}
+
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("HEH WHY YOU HERE");
 }
 </script>
   </body>
