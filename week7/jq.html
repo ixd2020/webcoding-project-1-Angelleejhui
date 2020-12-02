@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&display=swap" rel="stylesheet">
+
+  <title>Hello!</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("p").css({"background-color": "yellow", "font-size": "200%"});
+    });
+  });
+  </script>
+</head>
+  <body>
+    <h2>This is a heading</h2>
+
+<p style="background-color:pink">This is a paragraph.</p>
+<p style="background-color:pink">This is second paragraph.</p>
+<p style="background-color:pink">This is yet another paragraph.</p>
+
+<p>This is a paragraph.</p>
+
+<button>Set background-color for p</button>
+  </body>
+</html>
