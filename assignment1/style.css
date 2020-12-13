@@ -8,12 +8,13 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo{
     width: 50px;
     height: 50px;
+    padding-left: 20px;
 }
 
 .logo img{
@@ -99,12 +100,11 @@ ul li a:hover{
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: black;
+    background-color: rgba(0,0,0, 0.7);
     overflow: hidden;
     width: 0;
     height: 100%;
     transition: .5s ease;
-    opacity: 0.8;
 }
 
 .container:hover .overlay {
@@ -112,10 +112,9 @@ ul li a:hover{
     left: 0;
 }
 
-.text {
-    color: white;
+.overlay .text {
+    color: white;opacity: 1;
     font-size: 90px;
-    opacity: 1;
     text-align: center;
     align-items: center;
     position: absolute;
