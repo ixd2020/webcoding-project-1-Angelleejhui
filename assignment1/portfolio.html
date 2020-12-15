@@ -40,7 +40,7 @@
             </li>
             <li>
                 <a href="contact.html">
-                    Contact
+                    Sign Up
                 </a>
             </li>
         </ul>
@@ -70,91 +70,73 @@
       </div>
 
       <br>
-    <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 6</div>
-  <img src="image/nature/1.jpg" style="width:100%">
-  <div class="text2">
-      <h3>EMPATHY</h3>
-    </div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 6</div>
-  <img src="image/nature/2.jpg" style="width:100%">
-  <div class="text2">
-      <h3>WHATABOUTERY</h3>
-    </div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 6</div>
-  <img src="image/nature/3.jpg" style="width:100%">
-  <div class="text2">
-      <h3>TROLL</h3>
-    </div>
-</div>
-        
-    <div class="mySlides fade">
-  <div class="numbertext">4 / 6</div>
-  <img src="image/women/2-1.jpg"
-       style="width:100%">
-  <div class="text2">
-      <h3>“The Day I Realized It Was Not My Fault”</h3>
-    </div>
-</div>
-
-        <div class="mySlides fade">
-  <div class="numbertext">5 / 6</div>
-  <img src="image/women/2-2.jpg"
-       style="width:100%">
-  <div class="text2">
-      <h3>Tactile</h3>
-    </div>
-</div>
-        
-        <div class="mySlides fade">
-  <div class="numbertext">6 / 6</div>
-  <img src="image/women/2-3.jpg"
-       style="width:100%">
-  <div class="text2">
-      <h3>“Seeing Red”</h3>
-</div>
-</div>
-<br>
-
-<div style="text-align:center">
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span>
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-    <span class="dot"></span> 
-</div>
+    <div class="parent2-2">
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/nature/1.jpg">
+                </div>
+            </div>
+            
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/nature/2.jpg">
+                </div>
+            </div>
+            
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/nature/3.jpg">
+                </div>
+            </div>
+        </div>
+      <div class="portfoliomore1">
+      <a href="nature.html" class="portfoliomore">FIND OUT MORE!</a>
       </div>
       
+      <div class="parent2-2">
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/women/2-1.jpg">
+                </div>
+            </div>
+            
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/women/2-2.jpg">
+                </div>
+            </div>
+            
+            <div class="child2-1">
+                <div class="zoom">
+                    <img src="image/women/2-3.jpg">
+                </div>
+            </div>
+        </div>
+      <div class="portfoliomore1">
+      <a href="women.html" class="portfoliomore">FIND OUT MORE!</a>
+      </div>
       
-      <script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
-</script>
+      <hr>
+      
+      <div class="footer1">
+        <div class="footerhead1">
+            <h1>DONT MISS A DROP</h1>
+            <p>Be the first to hear about product launches, collaborations, and more when you sign up for our emails.</p>
+        </div>
+            
+        <div class="box">
+            <form>
+                <input type="text" name="username" placeholder="Please enter your email address" required>
+                
+                <input class="submit" type="submit" value="Subscribe">
+            </form>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="footer4">
+            @2020 Macro Mozzoni
+        </div>
+    </footer>
     </body>
 </html>
