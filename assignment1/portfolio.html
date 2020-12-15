@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>assignment1</title>
     <link href="style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/cocoen.min.css">
+  <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
   </head>
   <body>
     <nav>
@@ -65,55 +70,91 @@
       </div>
 
       <br>
-    <div class="parent2-2">
-        <div class="child2-1">
-            <img src="image/women/2-1.jpg">
-            <p>“The Day I Realized It Was Not My Fault”
-            </p>
-        </div>
-        <div class="child2-1">
-            <img src="image/women/2-2.jpg">
-            <p>Tactile
-            </p>
-        </div>
-        <div class="child2-1">
-            <a href="https://www.booooooom.com/2019/03/04/booooooom-x-thinkspace-seeing-red-exhibition/">
-            <img src="image/women/2-3.jpg"></a>
+    <div class="slideshow-container">
 
-            <a href="https://www.booooooom.com/2019/03/04/booooooom-x-thinkspace-seeing-red-exhibition/"><p>Booooooom x Thinkspace: “Seeing Red” Exhibition
-                </p></a>
-        </div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="image/nature/1.jpg" style="width:100%">
+  <div class="text2">
+      <h3>EMPATHY</h3>
     </div>
-      <div class="parent2-3">
-            <a href="women.html" class="button">FIND OUT MORE!</a>
-        </div>
-      <br>
-      <br>
-    <div class="parent2-2">
-        <div class="child2-1">
-            <img src="image/nature/1.jpg">
-            <h3>EMPATHY</h3>
-            <p>
-                Empathy is the capacity to understand or feel what another person is experiencing within their frame or refrence, that is, the capacity to place oneself in another's position
-            </p>
-        </div>
-        <div class="child2-1">
-            <img src="image/nature/2.jpg">
-            <h3>WHATABOUTERY</h3>
-            <p>
-                Whataboutery is a variant of the tu quoque logical fallacy that attempts to discredit an opponent's position by charging them with hypocrisy without directly refuting or disproving their argument
-            </p>
-        </div>
-        <div class="child2-1">
-            <img src="image/nature/3.jpg">
-            <h3>TROLL</h3>
-            <p>
-                A troll is a person who starts quarrels or upsets people on the Internet to distract and sow by posting inflammatory and digressive, extraneous, or off-topic messages in an online community
-            </p>
-        </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="image/nature/2.jpg" style="width:100%">
+  <div class="text2">
+      <h3>WHATABOUTERY</h3>
     </div>
-      <div class="parent2-3">
-            <a href="nature.html" class="button">FIND OUT MORE!</a>
-        </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="image/nature/3.jpg" style="width:100%">
+  <div class="text2">
+      <h3>TROLL</h3>
+    </div>
+</div>
+        
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="image/women/2-1.jpg"
+       style="width:100%">
+  <div class="text2">
+      <h3>“The Day I Realized It Was Not My Fault”</h3>
+    </div>
+</div>
+
+        <div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="image/women/2-2.jpg"
+       style="width:100%">
+  <div class="text2">
+      <h3>Tactile</h3>
+    </div>
+</div>
+        
+        <div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="image/women/2-3.jpg"
+       style="width:100%">
+  <div class="text2">
+      <h3>“Seeing Red”</h3>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+      </div>
+      
+      
+      <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
     </body>
 </html>
