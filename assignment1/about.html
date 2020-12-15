@@ -61,10 +61,15 @@
       <div class="parent3-2">
           <div class="artistpic">
             <img src="image/artist/artist%202.jpg">
+              <button onclick="myFunction()">Who Is This?</button>
           </div>
+
+
           <div class="text3">
               <div class="text3-1">
+                  <div class="artistname">
             <h2>MACRO MAZZONI</h2>
+                  </div>
 
             – The Hidden Craft of Feminine Healing –
               </div>
@@ -114,6 +119,11 @@ function myFunction() {
     video.pause();
     btn.innerHTML = "Play";
   }
+}
+          
+         
+function myFunction() {
+  document.querySelector(".artistname").style.backgroundColor = "#3472A5";
 }
 </script>
     </body>
