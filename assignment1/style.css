@@ -293,7 +293,7 @@ ul li a:hover{
 
 .parallax {
     background-image: url(image/parallax.jpg);
-    min-height: 700px;
+    min-height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -482,17 +482,17 @@ footer{
     /*women*/
 .landscape{
     display: block;
-    width: 90%;
+    width: 80%;
 }
 
 .portrait{
     display: block;
-    width: 90%;
+    width: 80%;
 }
 
 .product{
     display: block;
-    width: 90%;    
+    width: 80%;    
 }
     
 .photos{
