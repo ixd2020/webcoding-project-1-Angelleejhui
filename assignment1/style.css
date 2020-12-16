@@ -382,6 +382,7 @@ input[type=submit]{
     background-color: black;
     color: white;
     width: 100px;
+    padding-left: 10px;
     padding: 10px;
     border: 2px solid white;
 }
