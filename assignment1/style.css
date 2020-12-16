@@ -1,5 +1,5 @@
 *{
-    
+
 }
 
 @font-face{
@@ -195,7 +195,7 @@ ul li a:hover{
 }
 
 .zoom{
-    transition: transform .2s; 
+    transition: transform .2s;
 }
 
 .zoom:hover{
@@ -242,6 +242,10 @@ ul li a:hover{
 
 .parent3-2 button:hover{
     color: #3472A5;
+}
+
+.who{
+  font-size: 10px;
 }
 
 .artistpic{
@@ -445,7 +449,7 @@ footer{
     padding: 10px 10px;
     font-size: 10px;
 }
-    
+
     /*portfolio*/
 .parent2-2{
     display: block;
@@ -472,10 +476,15 @@ footer{
         width: 100%;
         height: auto;
     }
-    
+
 .parent3-2{
     display: inline-block;
     width: 70%;
+}
+
+.who{
+  text-align: center;
+  font-size: 5px;
 }
 
 .artistpic{
@@ -505,9 +514,9 @@ footer{
 
 .product{
     display: block;
-    width: 80%;    
+    width: 80%;
 }
-    
+
 .photos{
     width: 100%;
 }
@@ -520,12 +529,12 @@ footer{
 .parent5-1{
     text-align: center;
 }
-    
+
     /*contact*/
     .signin{
     padding-bottom: 10px;
 }
-    
+
     /*footer*/
 .footer1{
     padding-top: 10px;
@@ -535,11 +544,11 @@ footer{
 hr{
     padding-top: 20px;
 }
-    
+
     .footerhead1 h1{
         font-size: 20px;
     }
-    
+
     .footerhead1 p{
         font-size: 15px;
         width: 100%;
