@@ -136,16 +136,16 @@ main {
   margin: 0 0 0 16px;
 }
 
-.pop {
+.popular1 {
   display: flex;
   margin: 24px 0;
 }
 
-.pop h1 {
+.popular h1 {
   color: #ca2f22;
 }
 
-.pop img {
+.popular img {
   margin: 0 16px;
   height: 50%;
 }
