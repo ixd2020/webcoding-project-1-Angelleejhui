@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>assignment1</title>
+    <link href="style.css" rel="stylesheet">
+      <script src="/script.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/cocoen.min.css">
+  <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+          <a href="index.html">
+        <img src="image/logo/Macro Mazzoni.png">
+          </a>
+      </div>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="nature.html">Birds and animals</a>
+                </div>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Sign Up
+                </a>
+            </li>
+        </ul>
+      </nav>
+
+        <div class="parent3-1">
+            <h1>Artist Profile</h1>
+
+            <video  width="780" height="500" controls autoplay controls muted>
+  <source src='Interview%20with%20Marco%20Mazzoni%20Dondup%20in%20Milan.mp4' type="video/mp4">
+  <source src='Interview%20with%20Marco%20Mazzoni%20Dondup%20in%20Milan.mp4' type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      </div>
+      <div class="parent3-2">
+          <div class="artistpic">
+            <img src="image/artist/artist%202.jpg">
+              <button class="who" onclick="myFunction()">Who Is This?</button>
+          </div>
+
+
+          <div class="text3">
+              <div class="text3-1">
+                  <div class="artistname">
+            <h2>MACRO MAZZONI</h2>
+                  </div>
+                 <h4>artist from italy</h4> <p>marcomazzoniart@gmail.com</p>
+
+            – The Hidden Craft of Feminine Healing –
+              </div>
+            <div class="text3-2">
+            <p>Marco Mazzoni was born in 1982 in Tortona, Italy, and is currently based in Milan. In 2007, he received a bachelor’s degree in painting from Brera Art Academy in Milan. Mazzoni holds a strong interest in the medicinal properties of plants and the female herbalists of 16th – 18th Century Sardinia, who conserved their culture through oral traditions. His work has been exhibited in galleries throughout Europe and the United States.
+
+            <p>Mazzoni weaves a world based on Italian folklore of mystical women who seduce, bewitch, curse and cure. His work is a homage to the hidden craft and history of healing women and every drawing is infused with metaphors that tell their story. From flora and foliage that is either curative or hypnotic, butterflies and birds that drink the energising and nourishing nectar to the circular compositions alluding to the cyclical nature of life and finally the semi – hidden faces hinting at the enforced obscurity of women obliged by prevailing religious beliefs to conceal their knowledge, power and practice.</p>
+
+            <p>“Sardinian tales have been handed down by word of mouth, I could tell you about some of the protagonists, like the Accabadoras or the Cogas, but the thread that ties all these stories is the “woman”. I could tell you about my point of view to understand what I mean: if i read a book like “Dracula” I see the history of the right male that saves the easily conditioned woman: a lot of the stories of the witches in Italy are like Dracula. I think, with books or stories in history, the men needed to stop the real importance that women have had with their knowledge of plants and nature.” – Marco Mazzoni (Juxtapoz Magazine)
+                </p>
+            </div>
+              </div>
+        </div>
+
+      <hr>
+
+      <div class="footer1">
+        <div class="footerhead1">
+            <h1>DONT MISS A DROP</h1>
+            <p>Be the first to hear about product launches, collaborations, and more when you sign up for our emails.</p>
+        </div>
+
+        <div class="box">
+            <form>
+                <input type="text" name="username" placeholder="Please enter your email address" required>
+
+                <input class="submit" type="submit" value="Subscribe">
+            </form>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer4">
+            @2020 Macro Mazzoni
+        </div>
+    </footer>
+
+      <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+function myFunction() {
+  document.querySelector(".artistname").style.backgroundColor = "#3472A5";
+}
+</script>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>assignment1</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="/script.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/cocoen.min.css">
+  <link rel="stylesheet" href="dist/jquery.fancybox.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+          <a href="index.html">
+        <img src="image/logo/Macro Mazzoni.png">
+          </a>
+      </div>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="portfolio.html">
+                            Portfolio
+                        </a>
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="women.html">Women</a>
+                    <a href="nature.html">Birds and animals</a>
+                </div>
+                </div>
+            </li>
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    Sign Up
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+      <div class="parent4-1">
+        <h1>WOMEN</h1>
+      </div>
+      
+      <section class="landscape">
+    <div class="landscapephotos photocon">
+        
+      <ul class="photos">
+        <li><a data-fancybox="gallery" data-caption="Castor and Pollux" href="image/women1/MMazzoni-Castor-and-Pollux1.jpg"><img src='image/women1/MMazzoni-Castor-and-Pollux1.jpg' alt="Castor and Pollux"></a></li>
+        <li><a data-fancybox="gallery" data-caption="Chlorpromazine" href="image/women1/MMazzoni-Chlorpromazine1.jpg"><img src="image/women1/MMazzoni-Chlorpromazine1.jpg" alt="Chlorpromazine"></a></li>
+      </ul>
+
+
+      <ul class="photos">
+        <li><a data-fancybox="gallery" data-caption="In My Younger Days" href="image/women1/MMazzoni-In-My-Younger-Days1.jpg"><img src="image/women1/MMazzoni-In-My-Younger-Days1.jpg" alt="In My Younger Days"></a></li>
+          
+        <li><a data-fancybox="gallery" data-caption="Let Me Come Home" href="image/women1/MMazzoni-Let-Me-Come-Home1.jpg"><img src="image/women1/MMazzoni-Let-Me-Come-Home1.jpg" alt="Let Me Come Home"></a></li>
+          
+        <li><a data-fancybox="gallery" data-caption="Crying Light" href='image/women1/MMazzoni-The-Crying-Light1.jpg'><img src="image/women1/MMazzoni-The-Crying-Light1.jpg" alt="Crying Light"></a></li>
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!--product photography-->
+  <section class="product">
+    <div class="productphotos photocon">
+
+      <ul class="photos">
+        <li><a data-fancybox="gallery" data-caption="Love is Paranoid" href="image/women1/MMazzoni-Love-is-Paranoid1.jpg"><img src="image/women1/MMazzoni-Love-is-Paranoid1.jpg" alt="Love is Paranoid"></a></li>
+          
+        <li><a data-fancybox="gallery" data-caption="Phosphene" href="image/women1/MMazzoni-Phosphene1.jpg"><img src="image/women1/MMazzoni-Phosphene1.jpg" alt="Phosphene"></a></li>
+          
+        <li><a data-fancybox="gallery" data-caption="Chemical Peacock" href="image/women1/MMazzoni-The-Chemical-Peacock1.jpg"><img src="image/women1/MMazzoni-The-Chemical-Peacock1.jpg" alt="Chemical Peacock"></a></li>
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!--portrait-->
+  <section class="portrait">
+    <div class="portraitphotos photocon">
+
+      <ul class="photos">
+         <li><a data-fancybox="gallery" data-caption="Try FaIL Repeat" href="image/women1/MMazzoni-Try.Fail_.Repeat1.jpg"><img src="image/women1/MMazzoni-Try.Fail_.Repeat1.jpg" alt="Try Fail Repeat"></a></li>
+        <li><a data-fancybox="gallery" data-caption="The Last Weeping" href="image/women1/MMazzoni-The-Last-Weeping1.jpg"><img src="image/women1/MMazzoni-The-Last-Weeping1.jpg" alt="The Last Weeping"></a></li>
+          <li><a data-fancybox="gallery" data-caption="Medusa" href="image/women1/MMazzoni-Medusa1.jpg"><img src="image/women1/MMazzoni-Medusa1.jpg" alt="Medusa"></a></li>
+      </ul>
+
+    </div>
+  </section>
+      
+      <hr>
+      
+      <div class="footer1">
+        <div class="footerhead1">
+            <h1>DONT MISS A DROP</h1>
+            <p>Be the first to hear about product launches, collaborations, and more when you sign up for our emails.</p>
+        </div>
+            
+        <div class="box">
+            <form>
+                <input type="text" name="username" placeholder="Please enter your email address" required>
+                
+                <input class="submit" type="submit" value="Subscribe">
+            </form>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="footer4">
+            @2020 Macro Mazzoni
+        </div>
+    </footer>
+
+  <!--javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+  <script src="js/cocoen.min.js"></script>
+  <script src="js/cocoen-jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('.cocoen').cocoen();
+    });
+  </script>
+
+  <script src="dist/jquery.fancybox.min.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("topNav");
+      if (x.className === "myNav") {
+        x.className += " responsive";
+      } else {
+        x.className = "myNav";
+      }
+    }
+  </script>
+
+      
+    </body>
+</html>

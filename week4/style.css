@@ -1,0 +1,90 @@
+body{
+  background-image: url(overlayimg1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 20px;
+  margin: 0;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+h1{
+  font-style: italic;
+  color: purple;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.box{
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  height: 400px;
+  overflow: auto;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.redbox{
+  background-color: red;
+}
+
+.greenbox{
+  background-color: green;
+  color: yellow;
+  font-size: 20px;
+}
+
+.bluebox{
+  background-color: blue;
+}
+
+.yellowbox{
+  background-color: yellow;
+  border: 3px;
+  color: black;
+}
+
+.threecol{
+  width: 33.33%;
+}
+
+.twocol{
+  width: 50%;
+}
+
+.onecol{
+  width: 100%;
+}
+
+.class a{
+
+}
+
+a:link{
+  color: brown;
+}
+
+a:visted{
+  color: green;
+}
+
+a:hover{
+  color: hotpink;
+  background-color: yellow;
+}
+
+a:active{
+  color: blue;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .threecol, .twocol, .onecol {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */

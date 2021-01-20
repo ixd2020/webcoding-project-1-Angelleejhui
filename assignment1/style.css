@@ -1,0 +1,578 @@
+*{
+
+}
+
+@font-face{
+    font-family: roboto;
+    src:url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: roboto slab; src:url(fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+}
+
+body{
+    font-family: roboto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    color: #3472A5;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #3472A5;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*home*/
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.images {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(0,0,0, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.overlay .text {
+    color: white;opacity: 1;
+    font-size: 90px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.icon{
+    width: 50px;
+    padding-left: 60px;
+}
+
+.icon img{
+    width: 100%;
+}
+
+.icon a{
+    text-decoration: none;
+    color: none;
+}
+
+.button {
+    border: 2px solid white;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #ddd;
+    color: #3472A5;
+}
+
+/*portfolio*/
+.parent2-1{
+    text-align: center;
+    padding: 20px;
+}
+
+.parent2-2{
+    display: flex;
+    justify-content: center;
+}
+
+.child2-1{
+    position: relative;
+    width: 25%;
+    margin: 10px;
+}
+
+.child2-1 img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.portfoliomore1{
+    text-align: center;
+    padding: 10px;
+}
+
+.portfoliomore{
+    border: 2px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.portfoliomore:hover{
+    background-color: #ddd;
+    color: #3472A5;
+}
+
+/*about*/
+.parent3-1{
+    text-align: center;
+}
+
+.parent3-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.parent3-2 button{
+    border: white;
+    background-color: black;
+    color: white;
+}
+
+.parent3-2 button:hover{
+    color: #3472A5;
+}
+
+.who{
+  font-size: 10px;
+}
+
+.artistpic{
+    width: 45%;
+    margin-top: 70px;
+}
+
+.artistpic img{
+    width: 100%;
+}
+
+.artistpic button{
+    font-size: 20px;
+}
+
+.text3{
+   width: 50%;
+}
+
+/*women*/
+.parent4-1{
+    text-align: center;
+}
+
+.landscape{
+    display: flex;
+}
+
+.portrait{
+    display: flex;
+}
+
+.photos{
+    width: 100%;
+}
+
+.photos img{
+    width: 90%;
+}
+
+.photos li{
+    width: 100%;
+}
+
+.photos1 img{
+    width: 100%;
+}
+
+/*nature*/
+.parent5-1{
+    text-align: center;
+}
+
+/*contact*/
+.parent6-1{
+    text-align: center;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url(image/parallax.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add padding to containers */
+.container {
+    text-align: center;
+    padding: 5px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 22px 0;
+    display: inline-block;
+    border: none;
+    text-align: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+
+.registerbtn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    background-color: #ddd;
+    color: #3472A5;
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*footer*/
+.footer1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+hr{
+    padding-top: 50px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.footerhead1{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+form{
+    margin-top: 5px;
+}
+
+input[type=username]{
+    padding: 10px;
+    font-size: 12px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input[type=submit]{
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding-left: 10px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer2{
+    width: 50px;
+    height: 50px;
+}
+
+.footer2 img{
+    width: 100%;
+}
+
+.footer3{
+    display: flex;
+    width: 20%;
+}
+
+.footer3 img{
+    width: 60%;
+}
+
+.footericon{
+    padding-left: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  /*home*/
+.overlay .text {
+    font-size: 30px;
+}
+
+.icon{
+    width: 40px;
+    margin-right: 130px;
+}
+
+.icon img{
+    width: 50%;
+}
+
+.button {
+    padding: 10px 10px;
+    font-size: 10px;
+}
+
+    /*portfolio*/
+.parent2-2{
+    display: block;
+}
+
+.child2-1{
+    width: 95.5%;
+}
+
+.child2-1 img{
+    width: 100%;
+}
+.portfoliomore1{
+    text-align: center;
+    padding: 10px;
+}
+
+.portfoliomore{
+    padding: 15px 10px;
+    font-size: 10px;
+}
+    /*about*/
+    video{
+        width: 100%;
+        height: auto;
+    }
+
+.parent3-2{
+    display: inline-block;
+    width: 70%;
+}
+
+.who{
+  text-align: center;
+  font-size: 5px;
+}
+
+.artistpic{
+    width: 115%;
+    margin-top: 70px;
+}
+
+.artistpic img{
+    width: 100%;
+}
+
+.text3{
+    width: 115%;
+    text-align: center;
+}
+
+    /*women*/
+.landscape{
+    display: block;
+    width: 80%;
+}
+
+.portrait{
+    display: block;
+    width: 80%;
+}
+
+.product{
+    display: block;
+    width: 80%;
+}
+
+.photos{
+    width: 100%;
+}
+
+.photos img{
+    width: 100%;
+}
+
+/*nature*/
+.parent5-1{
+    text-align: center;
+}
+
+    /*contact*/
+    .signin{
+    padding-bottom: 10px;
+}
+
+    /*footer*/
+.footer1{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+hr{
+    padding-top: 20px;
+}
+
+    .footerhead1 h1{
+        font-size: 20px;
+    }
+
+    .footerhead1 p{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+input[type=username]{
+    padding: 10px;
+    font-size: 10px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+input[type=submit]{
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+    .footer4{
+        font-size: 10px;
+    }
+}

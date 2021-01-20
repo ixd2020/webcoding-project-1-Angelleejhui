@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #0B0C0F;
+}
+
+hr {
+    opacity: 25%;
+}
+
+body {
+    margin: 40px;
+    max-width: 100vw;
+}
+
+header img {
+    width: 180px;
+}
+
+.date {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-bottom: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'graphik web', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav li:not(:first-child) {
+    margin-left: 1em;
+}
+
+nav i {
+    margin: 0 16px;
+    font-size: 1.5em;
+    color: #a2a2a2;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0;
+}
+
+.hero {
+  width: 70%;
+}
+
+.hero1 {
+    display: flex;
+}
+
+.mainheading {
+    margin: 0 16px 0 0;
+}
+
+.mainheading a {
+    text-decoration: none;
+}
+
+.mainheading h2,
+.mainheading p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.mainheading p:last-child {
+    text-align: right;
+}
+
+.heroimage{
+    width: 130%;
+}
+
+.heroimage img{
+    width: 100%;
+}
+
+.hero2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.sub {
+  width: 32%;
+}
+
+.sub h4 {
+  margin: 16px 0;
+}
+
+
+.subimg img{
+  width: 100%;
+}
+
+.by {
+  display: flex;
+  justify-content: space-between;
+}
+
+.by p {
+  font-size: 13px;
+}
+
+.by p:first-child {
+  width: 75%;
+}
+
+.popular {
+  width:30%;
+  margin: 0 0 0 16px;
+}
+
+.popular1 {
+  display: flex;
+  margin: 24px 0;
+}
+
+.popular h1 {
+  color: #ca2f22;
+}
+
+.popular img {
+  margin: 0 16px;
+  height: 50%;
+}
